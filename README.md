@@ -2,9 +2,10 @@
 
 ## クローン後の流れ
 
-1 .env.exampleから.envを作る
+1 .env.exampleから.envを作り、APP_KEYを自動生成
 ```
 cp .env.example .env
+php artisan key:generate
 ```
   
 2 .envのDV設定等を環境に合わせて修正  
