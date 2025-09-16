@@ -22,3 +22,34 @@ npm install && npm run build
 ```
 docker compose exec app php artisan migrate
 ```
+
+## 作業開始の手順
+
+docker compose up -d でコンテナを起動  
+localhost:8080でLaravelのhome画面が表示されていたら成功
+
+## よく使うDocker comand
+
+起動しているコンテナを表示（ターミナルからでもOK）
+```
+docker ps
+# docker-compose.ymlに記述してあるコンテナが起動してればOK
+```
+
+コンテナの中に入る
+```
+docker compose exec <入りたいコンテナ名>
+```
+
+コンテナから出る
+```
+exit
+```
+
+## よく使うLaravelコマンド
+Laravelの標準コマンド php artisan  
+
+マイグレーションの実行(DBを操作)  
+```
+php artisan migrate
+```
